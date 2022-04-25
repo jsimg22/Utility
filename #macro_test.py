@@ -20,8 +20,9 @@ pyautogui.rightClick(1000,500) #우클릭
 pyautogui.drag(-500,-200 ,duration=1) #현재 마우스 위치 기준으로 이동
 pyautogui.dragTo(700,400 ,duration=1) #현재 위치에서 절대 좌표 타겟으로 
 pyautogui.scroll(300) #입력한 만큼 스크롤 양수는 위 방향
-#pyautogui.mouseInfo() 
 
 pixel = pyautogui.pixel(28,18) #좌표의 RGB 가져오기
 print(pixel)
 print(pyautogui.pixelMatchesColor(28,18,(60,60,60))) # 색이 동일한지 확인 (좌표 , (RGB값))
+
+pyautogui.mouseInfo() 
